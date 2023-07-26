@@ -9,7 +9,7 @@ const cakeSlice = createSlice({
     initialState,
     reducers:{
         ordered: (state) => {state.numCakes--},
-        restock: (state, action) => {state.numCakes + action.payload}
+        restock: (state, action) => {state.numCakes += action.payload}
     }  
 })
 
